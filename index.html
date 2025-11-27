@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Golepak – Privacy Policy</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, sans-serif;
+            background: #f5f6fa;
+            color: #333;
+        }
+
+        /* HEADER */
+        .header {
+            background: linear-gradient(135deg, #142f84, #1a3fa8);
+            padding: 60px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .header img {
+            width: 70px;
+            margin-bottom: 20px;
+            opacity: 0.95;
+        }
+
+        .header h1 {
+            font-size: 40px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .header p {
+            margin-top: 10px;
+            font-size: 17px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.9;
+        }
+
+        .updated-date {
+            margin-top: 12px;
+            font-size: 14px;
+            opacity: 0.85;
+        }
+
+        /* MAIN CONTENT AREA */
+        .container {
+            display: flex;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+            gap: 30px;
+        }
+
+        /* SIDEBAR NAVIGATION */
+        .sidebar {
+            width: 260px;
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            height: fit-content;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 20px;
+        }
+
+        .sidebar h3 {
+            margin-bottom: 15px;
+            font-size: 17px;
+        }
+
+        .nav-item {
+            padding: 12px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-bottom: 5px;
+            transition: 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-item:hover {
+            background: #eef3ff;
+        }
+
+        .nav-item.active {
+            background: #ffba42;
+            color: white;
+        }
+
+        /* CONTENT */
+        .content {
+            flex: 1;
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #142f84;
+        }
+
+        .section p,
+        .section li {
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        ul {
+            margin-top: 10px;
+        }
+    </style>
+
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+
+            const items = document.querySelectorAll(".nav-item");
+            items.forEach(i => i.classList.remove("active"));
+            document.getElementById("nav-" + id).classList.add("active");
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" />
+        <h1>Privacy Policy</h1>
+        <p>
+            We are committed to protecting your privacy and ensuring transparency
+            regarding how we collect, use, and safeguard your personal information
+            on the Golepak platform.
+        </p>
+        <div class="updated-date">Last updated: January 1, 2025</div>
+    </div>
+
+    <!-- BODY -->
+    <div class="container">
+
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+            <h3>Quick Navigation</h3>
+
+            <div id="nav-introduction" class="nav-item active" onclick="scrollToSection('introduction')">📘 Introduction
+            </div>
+            <div id="nav-data" class="nav-item" onclick="scrollToSection('data')">📊 Data Collection</div>
+            <div id="nav-use" class="nav-item" onclick="scrollToSection('use')">⚙️ Use of Data</div>
+            <div id="nav-cookies" class="nav-item" onclick="scrollToSection('cookies')">🍪 Cookies</div>
+            <div id="nav-third" class="nav-item" onclick="scrollToSection('third')">🔗 Third-party Services</div>
+            <div id="nav-rights" class="nav-item" onclick="scrollToSection('rights')">🛡 Your Rights</div>
+            <div id="nav-contact" class="nav-item" onclick="scrollToSection('contact')">📞 Contact Us</div>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div class="content">
+
+            <!-- INTRODUCTION -->
+            <div class="section" id="introduction">
+                <div class="section-title">📘 Introduction</div>
+                <p>
+                    Welcome to Golepak. This Privacy Policy explains how we collect, use, disclose,
+                    and protect your information when you use our application and services.
+                </p>
+                <p>
+                    By accessing or using our app, you agree to the terms of this Privacy Policy.
+                </p>
+            </div>
+
+            <!-- DATA COLLECTION -->
+            <div class="section" id="data">
+                <div class="section-title">📊 Data Collection</div>
+                <p>We may collect the following types of information:</p>
+
+                <ul>
+                    <li>Personal Data (Name, Email, Phone Number)</li>
+                    <li>Device Information & Log Data</li>
+                    <li>Location Data (if you allow permission)</li>
+                    <li>Usage Data from app analytics</li>
+                    <li>Media you upload (images, files, etc.)</li>
+                </ul>
+            </div>
+
+            <!-- USE OF DATA -->
+            <div class="section" id="use">
+                <div class="section-title">⚙️ Use of Data</div>
+                <p>Your data is used for:</p>
+                <ul>
+                    <li>Improving app performance</li>
+                    <li>Providing customer support</li>
+                    <li>Managing your account and transactions</li>
+                    <li>Security, fraud detection, and system monitoring</li>
+                    <li>Sending notifications or updates</li>
+                </ul>
+            </div>
+
+            <!-- COOKIES -->
+            <div class="section" id="cookies">
+                <div class="section-title">🍪 Cookies</div>
+                <p>
+                    We may use cookies or similar technologies to enhance app performance,
+                    analyze usage, and improve user experience.
+                </p>
+            </div>
+
+            <!-- THIRD PARTY -->
+            <div class="section" id="third">
+                <div class="section-title">🔗 Third-party Services</div>
+                <p>
+                    Golepak may use third-party providers such as:
+                </p>
+                <ul>
+                    <li>Firebase Authentication</li>
+                    <li>Firebase Cloud Firestore & Storage</li>
+                    <li>Payment Gateways</li>
+                    <li>Analytics Tools</li>
+                </ul>
+                <p>
+                    These services may collect information according to their own privacy policies.
+                </p>
+            </div>
+
+            <!-- RIGHTS -->
+            <div class="section" id="rights">
+                <div class="section-title">🛡 Your Rights</div>
+                <p>As a user, you have the right to:</p>
+                <ul>
+                    <li>Access your personal data</li>
+                    <li>Request corrections or deletion</li>
+                    <li>Withdraw consent anytime</li>
+                    <li>Disable permissions through device settings</li>
+                </ul>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="section" id="contact">
+                <div class="section-title">📞 Contact Us</div>
+                <p>
+                    If you have questions, complaints, or requests, please contact us at:
+                </p>
+                <p><b>Email:</b> support@golepak.com (ganti sesuai kebutuhan)</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
