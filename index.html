@@ -16,7 +16,7 @@
 
         /* HEADER */
         .header {
-            background: linear-gradient(135deg, #142f84, #1a3fa8);
+            background: linear-gradient(135deg, #007037, #0bae5d);
             padding: 60px 20px;
             text-align: center;
             color: white;
@@ -49,7 +49,7 @@
             opacity: 0.85;
         }
 
-        /* MAIN CONTENT AREA */
+        /* MAIN LAYOUT */
         .container {
             display: flex;
             padding: 40px 20px;
@@ -91,7 +91,7 @@
         }
 
         .nav-item.active {
-            background: #ffba42;
+            background: #0bae5d;
             color: white;
         }
 
@@ -112,7 +112,7 @@
             font-size: 22px;
             font-weight: 600;
             margin-bottom: 10px;
-            color: #142f84;
+            color: #007037;
         }
 
         .section p,
@@ -123,6 +123,74 @@
 
         ul {
             margin-top: 10px;
+        }
+
+        /* -------------------------------------------- */
+        /* RESPONSIVE MOBILE VERSION */
+        /* -------------------------------------------- */
+
+        @media (max-width: 900px) {
+
+            .container {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .sidebar {
+                width: auto;
+                position: relative;
+                top: 0;
+                display: flex;
+                overflow-x: auto;
+                padding: 10px;
+                gap: 10px;
+                /* Biar rapi */
+                border-radius: 15px;
+            }
+
+
+            .sidebar h3 {
+                display: none;
+            }
+
+            .nav-item {
+                flex: none;
+                white-space: nowrap;
+                padding: 10px 14px;
+                font-size: 14px;
+                border-radius: 20px;
+                background: #f2f2f2;
+            }
+
+            .nav-item.active {
+                background: #0bae5d;
+                color: white;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 30px;
+            }
+
+            .header p {
+                font-size: 15px;
+            }
+
+            .header img {
+                width: 55px;
+            }
+        }
+
+        .normal-link {
+            color: inherit;
+            /* ikut warna teks sekitar */
+            text-decoration: none;
+            /* hilangkan garis bawah */
+            font-weight: normal;
+            /* pastikan tidak bold */
         }
     </style>
 
@@ -142,14 +210,14 @@
 
     <!-- HEADER -->
     <div class="header">
-        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" />
+        <img src="https://storage.googleapis.com/in-travel-system.appspot.com/logo.png" />
         <h1>Privacy Policy</h1>
         <p>
             We are committed to protecting your privacy and ensuring transparency
             regarding how we collect, use, and safeguard your personal information
             on the Golepak platform.
         </p>
-        <div class="updated-date">Last updated: January 1, 2025</div>
+        <div class="updated-date">Last updated: November 27, 2025</div>
     </div>
 
     <!-- BODY -->
@@ -157,105 +225,135 @@
 
         <!-- SIDEBAR -->
         <div class="sidebar">
-            <h3>Quick Navigation</h3>
-
             <div id="nav-introduction" class="nav-item active" onclick="scrollToSection('introduction')">📘 Introduction
             </div>
-            <div id="nav-data" class="nav-item" onclick="scrollToSection('data')">📊 Data Collection</div>
-            <div id="nav-use" class="nav-item" onclick="scrollToSection('use')">⚙️ Use of Data</div>
+            <div id="nav-information" class="nav-item" onclick="scrollToSection('information')">📊 Information</div>
             <div id="nav-cookies" class="nav-item" onclick="scrollToSection('cookies')">🍪 Cookies</div>
-            <div id="nav-third" class="nav-item" onclick="scrollToSection('third')">🔗 Third-party Services</div>
-            <div id="nav-rights" class="nav-item" onclick="scrollToSection('rights')">🛡 Your Rights</div>
-            <div id="nav-contact" class="nav-item" onclick="scrollToSection('contact')">📞 Contact Us</div>
+            <div id="nav-location" class="nav-item" onclick="scrollToSection('location')">📍 Location</div>
+            <div id="nav-use" class="nav-item" onclick="scrollToSection('use')">⚙️ Device</div>
+            <div id="nav-service" class="nav-item" onclick="scrollToSection('service')">🔗 Service</div>
+            <div id="nav-security" class="nav-item" onclick="scrollToSection('security')">🛡 Security</div>
+            <div id="nav-children" class="nav-item" onclick="scrollToSection('children')">🧒 Children’s</div>
+            <div id="nav-changes" class="nav-item" onclick="scrollToSection('changes')">🔄 Changes</div>
+            <div id="nav-contact" class="nav-item" onclick="scrollToSection('contact')">📞 Contact</div>
         </div>
 
         <!-- MAIN CONTENT -->
         <div class="content">
 
-            <!-- INTRODUCTION -->
+            <!-- INTRO -->
             <div class="section" id="introduction">
                 <div class="section-title">📘 Introduction</div>
                 <p>
-                    Welcome to Golepak. This Privacy Policy explains how we collect, use, disclose,
-                    and protect your information when you use our application and services.
+                    Our privacy policy will help you understand what information we collect at Golepak, how Golepak uses
+                    it, and what choices you have. Innotia Power Nusantara built the Golepak app as a free app. This
+                    <b>SERVICE</b> is provided by Innotia Power Nusantara at no cost and is intended for use as is. If
+                    you
+                    choose to use our Service, then you agree to the collection and use of information in relation with
+                    this policy. The Personal Information that we collect are used for providing and improving the
+                    Service. We will not use or share your information with anyone except as described in this Privacy
+                    Policy.
                 </p>
                 <p>
-                    By accessing or using our app, you agree to the terms of this Privacy Policy.
+                    The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which
+                    is accessible in our website, unless otherwise defined in this Privacy Policy.
                 </p>
             </div>
 
-            <!-- DATA COLLECTION -->
-            <div class="section" id="data">
-                <div class="section-title">📊 Data Collection</div>
-                <p>We may collect the following types of information:</p>
-
-                <ul>
-                    <li>Personal Data (Name, Email, Phone Number)</li>
-                    <li>Device Information & Log Data</li>
-                    <li>Location Data (if you allow permission)</li>
-                    <li>Usage Data from app analytics</li>
-                    <li>Media you upload (images, files, etc.)</li>
-                </ul>
-            </div>
-
-            <!-- USE OF DATA -->
-            <div class="section" id="use">
-                <div class="section-title">⚙️ Use of Data</div>
-                <p>Your data is used for:</p>
-                <ul>
-                    <li>Improving app performance</li>
-                    <li>Providing customer support</li>
-                    <li>Managing your account and transactions</li>
-                    <li>Security, fraud detection, and system monitoring</li>
-                    <li>Sending notifications or updates</li>
-                </ul>
+            <!-- Information -->
+            <div class="section" id="information">
+                <div class="section-title">📊 Information Collection and Use</div>
+                <p>For a better experience while using our Service, we may require you to provide us with certain
+                    personally identifiable information, including but not limited to users name, email address, gender,
+                    location, pictures. The information that we request will be retained by us and used as described in
+                    this privacy policy. The app does use third party services that may collect information used to
+                    identify you.</p>
             </div>
 
             <!-- COOKIES -->
             <div class="section" id="cookies">
                 <div class="section-title">🍪 Cookies</div>
                 <p>
-                    We may use cookies or similar technologies to enhance app performance,
-                    analyze usage, and improve user experience.
+                    Cookies are files with small amount of data that is commonly used an anonymous unique identifier.
+                    These are sent to your browser from the website that you visit and are stored on your devices’s
+                    internal memory. </p>
+                <p>
+                    This Services does not uses these <b>“cookies”</b> explicitly. However, the app may use third party
+                    code and libraries that use <b>“cookies”</b> to collection information and to improve their
+                    services. You
+                    have the option to either accept or refuse these cookies, and know when a cookie is being sent to
+                    your
+                    device. If you choose to refuse our cookies, you may not be able to use some portions of this
+                    Service.
                 </p>
+            </div>
+
+            <!-- Location Information -->
+            <div class="section" id="location">
+                <div class="section-title">📍 Location Information</div>
+                <p>Some of the services may use location information transmitted from users' mobile phones. We only use
+                    this information within the scope necessary for the designated service.</p>
             </div>
 
             <!-- THIRD PARTY -->
-            <div class="section" id="third">
-                <div class="section-title">🔗 Third-party Services</div>
-                <p>
-                    Golepak may use third-party providers such as:
-                </p>
-                <ul>
-                    <li>Firebase Authentication</li>
-                    <li>Firebase Cloud Firestore & Storage</li>
-                    <li>Payment Gateways</li>
-                    <li>Analytics Tools</li>
-                </ul>
-                <p>
-                    These services may collect information according to their own privacy policies.
-                </p>
+            <div class="section" id="use">
+                <div class="section-title">⚙️ Device Information</div>
+                <p>We collect information from your device in some cases. The information will be utilized for the
+                    provision of better service and to prevent fraudulent acts. Additionally, such information will not
+                    include that which will identify the individual user.</p>
             </div>
 
             <!-- RIGHTS -->
-            <div class="section" id="rights">
-                <div class="section-title">🛡 Your Rights</div>
-                <p>As a user, you have the right to:</p>
+            <div class="section" id="service">
+                <div class="section-title">🔗 Service Providers</div>
+                <p>We may employ third-party companies and individuals due to the following reasons:</p>
                 <ul>
-                    <li>Access your personal data</li>
-                    <li>Request corrections or deletion</li>
-                    <li>Withdraw consent anytime</li>
-                    <li>Disable permissions through device settings</li>
+                    <li>To facilitate our Service</li>
+                    <li>To provide the Service on our behalf</li>
+                    <li>To perform Service-related services, or</li>
+                    <li>To assist us in analyzing how our Service is used</li>
                 </ul>
+                <p>We want to inform users of this Service that these third parties have access to your Personal
+                    Information. The reason is to perform the tasks assigned to them on our behalf. However, they are
+                    obligated not to disclose or use the information for any other purpose.</p>
+            </div>
+
+            <!-- THIRD PARTY -->
+            <div class="section" id="security">
+                <div class="section-title">🛡 Security</div>
+                <p>We value your trust in providing us your Personal Information, thus we are striving to use
+                    commercially acceptable means of protecting it. But remember that no method of transmission over the
+                    internet, or method of electronic storage is 100% secure and reliable, and we cannot guarantee its
+                    absolute security.</p>
+            </div>
+
+            <!-- THIRD PARTY -->
+            <div class="section" id="children">
+                <div class="section-title">🧒 Children's Privacy</div>
+                <p>This Services do not address anyone under the age of 13. We do not knowingly collect personal
+                    identifiable information from children under 13. In the case we discover that a child under 13 has
+                    provided us with personal information, we immediately delete this from our servers. If you are a
+                    parent or guardian and you are aware that your child has provided us with personal information,
+                    please contact us so that we will be able to do necessary actions.</p>
+            </div>
+
+            <!-- THIRD PARTY -->
+            <div class="section" id="changes">
+                <div class="section-title">🔄 Changes to This Privacy Policy</div>
+                <p>We may update our Privacy Policy from time to time. Thus, you are advised to review this page
+                    periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on
+                    this page. These changes are effective immediately, after they are posted on this page.</p>
             </div>
 
             <!-- CONTACT -->
             <div class="section" id="contact">
                 <div class="section-title">📞 Contact Us</div>
-                <p>
-                    If you have questions, complaints, or requests, please contact us at:
-                </p>
-                <p><b>Email:</b> support@golepak.com (ganti sesuai kebutuhan)</p>
+                <p>Questions or requests? Contact us at:</p>
+                <p><b>Email:</b> enquiry@golepak.com</p>
+                <p><b>Phones:</b><a class="normal-link"
+                        href="https://api.whatsapp.com/send/?phone=%2B601156774832&text=Hello%2C+I+am+interest+in+knowing+more+about+potential+travel+packages&type=phone_number&app_absent=0">
+                        +60 1156774832
+                    </a> / +60 1113379858</p>
             </div>
 
         </div>
